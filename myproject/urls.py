@@ -16,13 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from . import hello, bye
+from . import hello
 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', hello.hello),
-    path('bye/', bye.bye )
+    path('reverse/', hello.reverse)
        
 ]
